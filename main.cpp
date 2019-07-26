@@ -65,7 +65,7 @@ namespace xpcf = org::bcom::xpcf;
 
 int main(int argc, char **argv){
 
-#if NDEBUG
+#ifdef NDEBUG
     boost::log::core::get()->set_logging_enabled(false);
 #endif
 
